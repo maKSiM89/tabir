@@ -1,97 +1,37 @@
 $main-color: #c49b66;
-$mobile-xs-screen: 480px;
 $tablet-sm-screen: 767px;
 $desk-md-screen: 991px;
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	outline: none;
-	list-style: none;
-	word-wrap: break-word;
-
-}
-h1,h2,h3,h4,h5,h6{
-	font-family: 'Josefin Sans', sans-serif;
-}
-span, a, a:hover {
-	display: inline-block;
-	text-decoration: none;
-	color: inherit;
-}
-.full-width{
-	width: 100% !important;
-}
 .container {
+
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 768px) {
-  .container {
-	width: 750px;
-  }
+
+.mt-30 {
+  margin-top: 30px !important;
 }
-@media (min-width: 992px) {
-  .container {
-	width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-	width: 1170px;
-  }
-}
-.row {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.text-center {
-  text-align: center;
-}
-.caption {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  color: #777777;
-  text-align: left;
-}
+
 .mt-50 {
   margin-top: 50px !important;
-}
-.cd-headline {
-	line-height: 1.2;
-}
-.cd-headline.push b {
-  opacity: 0;
-}
-.cd-headline.push b.is-visible {
-  opacity: 1;
-  -webkit-animation: push-in 0.6s;
-  -moz-animation: push-in 0.6s;
-  animation: push-in 0.6s;
-}
-.cd-headline.push b.is-hidden {
-  -webkit-animation: push-out 0.6s;
-  -moz-animation: push-out 0.6s;
-  animation: push-out 0.6s;
 }
 
 // xpush
 
+.cd-headline {
+	line-height: 1.2;
+}
+
 .cd-headline.push b {
   opacity: 0;
 }
 .cd-headline.push b.is-visible {
   opacity: 1;
-  -webkit-animation: push-in 0.6s;
-  -moz-animation: push-in 0.6s;
   animation: push-in 0.6s;
 }
 .cd-headline.push b.is-hidden {
-  -webkit-animation: push-out 0.6s;
-  -moz-animation: push-out 0.6s;
   animation: push-out 0.6s;
 }
 
@@ -111,6 +51,10 @@ span, a, a:hover {
 	top: 0;
 }
 
+.cd-words-wrapper b {
+margin-left: 20px;
+}
+
 .cd-words-wrapper b.is-visible {
 	position: relative;
 }
@@ -124,7 +68,7 @@ span, a, a:hover {
 }
 
 //btn
-.butn {
+.btn {
   padding: 12px 34px;
   background: #fff;
   border-radius: 30px;
@@ -139,12 +83,14 @@ span, a, a:hover {
   outline: none !important;
   overflow: hidden;
 }
-.butn span {
+
+.btn span {
   position: relative;
   z-index: 2;
   transition-delay: 0s;
 }
-.butn:before, .butn:after {
+
+.btn:before, .btn:after {
   content: '';
   width: 0;
   height: 100%;
@@ -156,57 +102,67 @@ span, a, a:hover {
   z-index: 1;
   opacity: .4;
 }
-.butn:after {
+
+.btn:after {
   transition-delay: 0s;
   background: #fff;
   opacity: 1;
 }
-.butn:hover:before, .butn:hover:after {
+
+.btn:hover:before, .btn:hover:after {
   width: 100%;
 }
-.butn:hover:after {
+
+.btn:hover:after {
   transition-delay: .2s;
 }
-.butn:hover span {
+
+.btn:hover span {
   transition-delay: .2s;
 }
-.butn-bord {
+
+.btn-bord {
   background: transparent;
   border: 1px solid #eee;
 }
-.butn-bord:before, .butn-bord:after {
+
+.btn-bord:before, .btn-bord:after {
   background: #c49b66;
 }
-.butn-bord:hover {
+
+.btn-bord:hover {
   border-color: #c49b66;
 }
-.butn-bord:hover span {
+
+.btn-bord:hover span {
   color: #fff;
 }
-.butn-light {
+
+.btn-light {
   background: #fff;
 }
-.butn-light:before, .butn-light:after {
+
+.btn-light:before, .btn-light:after {
   background: #c49b66;
 }
-.butn-light:hover span {
+
+.btn-light:hover span {
   color: #fff;
 }
-.butn-light span {
+
+.btn-light span {
   color: #c49b66;
 }
+
 .mt-30 {
   margin-top: 30px !important;
 }
 
 .valign{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
+
 .bg-img{
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -214,41 +170,16 @@ span, a, a:hover {
 
 .header{
 	min-height: 110vh;
-  background-image: url('/assets/img/bg.jpg');background-position: 0px 4px;
+  background-image: url('/assets/img/bg.jpg');
+  background-position: 0px 4px;
 
 	.caption{
-
-		.o-hidden{
-			display: inline-block;
-		}
-
-		h2{
-			font-size: 70px;
-			font-weight: 300;
-			letter-spacing: 4px;
-		}
 
 		h1{
 			margin: 15px 0;
 			font-size: 60px;
 			font-weight: 700;
 			letter-spacing: 2px;
-		}
-
-		.social{
-			display: inline-block;
-			padding: 10px 20px;
-			border-radius: 30px;
-			background-color: rgba(200,200,200,.05);
-
-			a{
-				padding: 0 15px;
-				font-size: 14px;
-
-				&:hover{
-					color: $main-color;
-				}
-			}
 		}
 	}
 }
