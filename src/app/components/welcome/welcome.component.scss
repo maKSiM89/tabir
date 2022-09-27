@@ -133,9 +133,7 @@ span, a, a:hover {
   z-index: 3;
   margin-left: 10px;
   margin-right: 10px;
-  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all .4s;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
   transition: all .4s;
   cursor: pointer;
   outline: none !important;
@@ -144,8 +142,7 @@ span, a, a:hover {
 .butn span {
   position: relative;
   z-index: 2;
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
 }
 .butn:before, .butn:after {
   content: '';
@@ -155,14 +152,12 @@ span, a, a:hover {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transition: width 0.4s;
   transition: width 0.4s;
   z-index: 1;
   opacity: .4;
 }
 .butn:after {
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
+  transition-delay: 0s;
   background: #fff;
   opacity: 1;
 }
@@ -170,12 +165,10 @@ span, a, a:hover {
   width: 100%;
 }
 .butn:hover:after {
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
+  transition-delay: .2s;
 }
 .butn:hover span {
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
+  transition-delay: .2s;
 }
 .butn-bord {
   background: transparent;
