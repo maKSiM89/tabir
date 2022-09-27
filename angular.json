@@ -29,8 +29,7 @@
 						],
 						"styles": [
 							"src/styles.scss",
-							"src/assets/styles/fonts.scss",
-							"src/assets/styles/buttons.scss"
+							"src/assets/styles/fonts.scss"
 						],
 						"scripts": []
 					},
@@ -99,8 +98,7 @@
 						],
 						"styles": [
 							"src/styles.scss",
-							"src/assets/styles/fonts.scss",
-							"src/assets/styles/buttons.scss"
+							"src/assets/styles/fonts.scss"
 						],
 						"scripts": []
 					}
