@@ -1,8 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-$main-color: #c49b66;
-$mobile-xs-screen: 480px;
-$tablet-sm-screen: 767px;
-$desk-md-screen: 991px;
+@import './assets/styles/vars';
+@import './assets/styles/buttons';
 
 * {
 	margin: 0;
@@ -65,11 +63,8 @@ span, a, a:hover {
 }
 
 section{
-
 	&:hover{
-
 		.section-head{
-
 			h4{
 				color: transparent;
 				-webkit-text-stroke: 1px #333;
@@ -119,6 +114,7 @@ section{
 	background-attachment: fixed;
 }
 
+
 .valign{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -132,109 +128,4 @@ section{
     top: 50%;
     left: 0;
     transform: translate(0%, -50%);
-}
-
-.butn{
-	padding: 12px 34px;
-	background: #fff;
-	border-radius: 30px;
-	border: 1px solid transparent;
-	position: relative;
-	z-index: 3;
-	margin-left: 10px;
-	margin-right: 10px;
-	box-shadow: 0px 10px 30px rgba(0,0,0,.1);
-	transition: all .4s;
-	cursor: pointer;
-	outline: none !important;
-	overflow: hidden;
-
-	span{
-		position: relative;
-		z-index: 2;
-		transition-delay: 0s;
-	}
-
-	&:before, &:after{
-		content: '';
-		width: 0;
-		height: 100%;
-		background: #fff;
-		position: absolute;
-		left: 0;
-		top: 0;
-		transition: width 0.4s;
-		z-index: 1;
-		opacity: .4;
-	}
-
-	&:after{
-		transition-delay: 0s;
-		background: #fff;
-		opacity: 1;
-	}
-
-	&:hover{
-
-		&:before, &:after{
-			width: 100%;
-		}
-
-		&:after{
-			transition-delay: .2s;
-		}
-
-		span{
-			transition-delay: .2s;
-		}
-	}
-}
-
-.butn-bg{
-	background: $main-color;
-	border-color: $main-color;
-	color: #fff;
-
-	&:hover{
-
-		span{
-			color: $main-color;
-		}
-	}
-}
-
-.butn-light{
-	background: #fff;
-
-	&:before, &:after{
-		background: $main-color;
-	}
-
-	&:hover{
-
-		span{
-			color: #fff;
-		}
-	}
-
-	span{
-		color: $main-color;
-	}
-}
-
-.butn-bord{
-	background: transparent;
-	border: 1px solid #eee;
-
-	&:before, &:after{
-		background: $main-color;
-	}
-
-	&:hover{
-		border-color: $main-color;
-
-		span{
-			color: #fff;
-		}
-	}
 }
