@@ -19,7 +19,7 @@ body {
 	font-weight: 400;
 	font-size: 14px;
 	font-family: 'Rubik', sans-serif;
-	overflow-x: hidden !important;
+	overflow-x: hidden;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -86,7 +86,7 @@ section{
 }
 
 .bg-dark{
-	background: #0F0F0F !important;
+	background: #0F0F0F;
 }
 
 .o-hidden {
@@ -98,7 +98,7 @@ section{
 }
 
 .full-width{
-	width: 100% !important;
+	width: 100%;
 }
 
 .lg-line-height{
