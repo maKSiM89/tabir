@@ -1,14 +1,5 @@
-@import "../header/basic-style.scss";
-@font-face {
-	font-family: 'icofont';
-	src: url('/assets/fonts/icofont.eot?v=1.0.0-beta');
-	src: url('/assets/fonts/icofont.eot?v=1.0.0-beta#iefix') format('embedded-opentype'),
-	url('/assets/fonts/icofont.ttf?v=1.0.0-beta') format('truetype'),
-	url('/assets/fonts/icofont.woff?v=1.0.0-beta') format('woff'),
-	url('/assets/fonts/icofont.svg?v=1.0.0-beta#icofont') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
+@import "src/styles.scss";
+@import "src/assets/styles/fonts.scss";
 
 .icofont {
 	font-family: 'IcoFont' !important;

@@ -1,7 +1,10 @@
 
-@import "../header/basic-style.scss";
+@import "src/styles.scss";
 
 
+.navbar .navbar-nav .active {
+  color: #c49b66 !important;
+}
 .navbar{
 	position: absolute;
 	left: 0;
@@ -10,22 +13,27 @@
 	background: transparent;
 	z-index: 9;
 	min-height: 80px;
-
+	.container{
+		display: flex;
+		justify-content: space-around;
+	}
 	.icon-bar{
 		color: #fff;
 	}
+.navbar-wrap{
+	
+}
 
 	.navbar-nav{
-  
+  display: flex;
 		.nav-link{
 			font-size: 13px;
 			font-weight: 500;
 			color: #eee;
 			letter-spacing: .5px;
-			margin: 15px 5px;
+			margin: 30px 5px;
 			transition: all .5s;
 		}
-
 		.active{
 			color: $main-color !important;
 		}
@@ -44,6 +52,6 @@
 }
 
 .logo{
-	padding: 15px 0;
+	padding: 15px 0px;
 	width: 90px;
 }
