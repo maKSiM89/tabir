@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-$main-color: #c49b66;
-$tablet-sm-screen: 767px;
-$desk-md-screen: 991px;
+@import './assets/styles/vars';
+@import './assets/styles/buttons';
 
 * {
 	margin: 0;
@@ -61,11 +60,8 @@ span, a, a:hover {
 }
 
 section{
-
 	&:hover{
-
 		.section-head{
-
 			h4{
 				color: transparent;
 				-webkit-text-stroke: 1px #333;
@@ -126,6 +122,7 @@ section{
 	background-attachment: fixed;
 }
 
+
 .valign{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -139,7 +136,6 @@ section{
     top: 50%;
     left: 0;
     transform: translate(0%, -50%);
-}
 
 .row {
   margin-left: -15px;
