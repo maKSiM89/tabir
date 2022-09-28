@@ -9,7 +9,6 @@
 	outline: none;
 	list-style: none;
 	word-wrap: break-word;
-
 }
 
 body {
@@ -22,7 +21,7 @@ body {
 	overflow-x: hidden;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1, h2, h3, h4, h5, h6 {
 	font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -51,8 +50,8 @@ span, a, a:hover {
 .text-center {
   text-align: center;
 }
-.container {
 
+.container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -64,7 +63,6 @@ section{
 		.section-head{
 			h4{
 				color: transparent;
-				-webkit-text-stroke: 1px #333;
 			}
 		}
 	}
@@ -122,40 +120,44 @@ section{
 	background-attachment: fixed;
 }
 
-
 .valign{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
 }
 
 .v-middle {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 0;
-    transform: translate(0%, -50%);
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+}
 
 .row {
   margin-left: -15px;
   margin-right: -15px;
 }
+
 @media (min-width: 768px) {
   .container {
 	width: 750px;
   }
 }
+
 @media (min-width: 992px) {
   .container {
 	width: 970px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
 	width: 1170px;
   }
 }
+
 @media screen and (max-width: $desk-md-screen){
   .mb-md50{
     margin-bottom: 50px;
