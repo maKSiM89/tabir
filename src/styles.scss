@@ -70,6 +70,7 @@ section {
     .section-head {
       h4 {
         color: transparent;
+        -webkit-text-stroke: 1px #333;
       }
     }
   }
@@ -101,7 +102,7 @@ section {
 }
 
 .bg-dark {
-  background: #0F0F0F;
+  background: #0F0F0F !important;
 }
 
 .o-hidden {
