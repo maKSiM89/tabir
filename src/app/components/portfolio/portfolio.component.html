@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row">
 
-            <div class="section-head text-center col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+            <div class="section-head text-center">
                 <h4>Portfolio</h4>
             </div>
 
             <!-- filter links -->
-            <div class="filtering text-center col-sm-12">
+            <div class="filtering text-center">
                 <span (click)="onSectionClick(portfolioType.All)" [class.active]="type === portfolioType.All">All</span>
                 <span (click)="onSectionClick(portfolioType.Brand)"
                       [class.active]="type === portfolioType.Brand">Brand</span>
@@ -18,7 +18,7 @@
             </div>
 
             <!-- gallery -->
-            <div class="gallery text-center full-width">
+            <div class="gallery text-center">
                 <!-- gallery item -->
                 <div class="items items-all" *ngIf="type === portfolioType.All">
                     <div class="items-all-col">
