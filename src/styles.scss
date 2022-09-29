@@ -906,3 +906,21 @@ section {
 .mt-50 {
   margin-top: 50px;
 }
+
+.section-padding {
+  padding: 120px 0;
+}
+
+.section-head {
+  margin-bottom: 80px;
+  position: relative;
+
+  h4 {
+    font-size: 70px;
+    font-weight: 800;
+    font-family: inherit;
+    letter-spacing: 2px;
+    color: #222;
+    transition: all .4s;
+  }
+}
