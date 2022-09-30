@@ -1,0 +1,171 @@
+$main-color: #c49b66;
+$tablet-sm-screen: 767px;
+$desk-md-screen: 991px;
+
+.container {
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// xpush
+
+.cd-headline {
+	line-height: 1.2;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.cd-headline.push b {
+  opacity: 0;
+}
+.cd-headline.push b.is-visible {
+  opacity: 1;
+  animation: push-in 0.6s;
+}
+.cd-headline.push b.is-hidden {
+  animation: push-out 0.6s;
+}
+
+.cd-words-wrapper {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+}
+
+.cd-words-wrapper b {
+	font-weight: inherit;
+	color: $main-color;
+	display: inline-block;
+	position: absolute;
+	white-space: nowrap;
+	left: 0;
+	top: 0;
+}
+
+.cd-words-wrapper b {
+margin-left: 20px;
+}
+
+.cd-words-wrapper b.is-visible {
+	position: relative;
+}
+
+.no-js .cd-words-wrapper b {
+	opacity: 0;
+}
+
+.no-js .cd-words-wrapper b.is-visible {
+	opacity: 1;
+}
+
+//btn
+.btn {
+  padding: 12px 34px;
+  background: #fff;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  position: relative;
+  z-index: 3;
+  margin-left: 10px;
+  margin-right: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all .4s;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+.btn span {
+  position: relative;
+  z-index: 2;
+  transition-delay: 0s;
+}
+
+.btn:before, .btn:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: width 0.4s;
+  z-index: 1;
+  opacity: .4;
+}
+
+.btn:after {
+  transition-delay: 0s;
+  background: #fff;
+  opacity: 1;
+}
+
+.btn:hover:before, .btn:hover:after {
+  width: 100%;
+}
+
+.btn:hover:after {
+  transition-delay: .2s;
+}
+
+.btn:hover span {
+  transition-delay: .2s;
+}
+
+.btn-bord {
+  background: transparent;
+  border: 1px solid #eee;
+}
+
+.btn-bord:before, .btn-bord:after {
+  background: #c49b66;
+}
+
+.btn-bord:hover {
+  border-color: #c49b66;
+}
+
+.btn-bord:hover span {
+  color: #fff;
+}
+
+.btn-light {
+  background: #fff;
+}
+
+.btn-light:before, .btn-light:after {
+  background: #c49b66;
+}
+
+.btn-light:hover span {
+  color: #fff;
+}
+
+.btn-light span {
+  color: #c49b66;
+}
+
+.valign{
+  display: flex;
+  align-items: center;
+}
+
+.header{
+	min-height: 110vh;
+  background-image: url('/assets/img/bg.jpg');
+  background-position: 0px 4px;
+
+	.caption{
+
+		h1{
+			margin: 15px 0;
+			font-size: 60px;
+			font-weight: 700;
+			letter-spacing: 2px;
+		}
+	}
+}
