@@ -15,8 +15,8 @@ $desk-md-screen: 991px;
 .cd-headline {
 	line-height: 1.2;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
-  font-size: 55px;
+  font-weight: 700;
+  font-size: 70px;
 }
 
 .cd-headline.push b {
@@ -62,93 +62,6 @@ margin-left: 20px;
 	opacity: 1;
 }
 
-//btn
-.btn {
-  padding: 12px 34px;
-  background: #fff;
-  border-radius: 30px;
-  border: 1px solid transparent;
-  position: relative;
-  z-index: 3;
-  margin-left: 10px;
-  margin-right: 10px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  transition: all .4s;
-  cursor: pointer;
-  outline: none;
-  overflow: hidden;
-}
-
-.btn span {
-  position: relative;
-  z-index: 2;
-  transition-delay: 0s;
-}
-
-.btn:before, .btn:after {
-  content: '';
-  width: 0;
-  height: 100%;
-  background: #fff;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transition: width 0.4s;
-  z-index: 1;
-  opacity: .4;
-}
-
-.btn:after {
-  transition-delay: 0s;
-  background: #fff;
-  opacity: 1;
-}
-
-.btn:hover:before, .btn:hover:after {
-  width: 100%;
-}
-
-.btn:hover:after {
-  transition-delay: .2s;
-}
-
-.btn:hover span {
-  transition-delay: .2s;
-}
-
-.btn-bord {
-  background: transparent;
-  border: 1px solid #eee;
-}
-
-.btn-bord:before, .btn-bord:after {
-  background: #c49b66;
-}
-
-.btn-bord:hover {
-  border-color: #c49b66;
-}
-
-.btn-bord:hover span {
-  color: #fff;
-}
-
-.btn-light {
-  background: #fff;
-}
-
-.btn-light:before, .btn-light:after {
-  background: #c49b66;
-}
-
-.btn-light:hover span {
-  color: #fff;
-}
-
-.btn-light span {
-  color: #c49b66;
-}
-
 .valign{
   display: flex;
   align-items: center;
@@ -163,9 +76,9 @@ margin-left: 20px;
 
 		h1{
 			margin: 15px 0;
-			font-size: 60px;
-			font-weight: 700;
-			letter-spacing: 2px;
+			font-size: 70px;
+			font-weight: 300;
+			letter-spacing: 4px;
 		}
 	}
 }
