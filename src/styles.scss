@@ -76,19 +76,6 @@ section {
   }
 }
 
-.clearfix:before,
-.clearfix:after,
-.container:before,
-.container:after {
-  content: " ";
-  display: table;
-}
-
-.clearfix:after,
-.container:after {
-  clear: both;
-}
-
 .wave {
   position: absolute;
   width: 100%;
