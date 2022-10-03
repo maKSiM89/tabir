@@ -1,7 +1,7 @@
 @import './../../../assets/styles/vars.scss';
 
 .navbar .navbar-nav .active {
-  color: #c49b66 !important;
+  color: #c49b66;
 }
 
 .navbar{
@@ -35,7 +35,7 @@
 		}
 
 		.active{
-			color: $main-color !important;
+			color: $main-color;
 		}
 	}
 }
@@ -71,7 +71,7 @@
 		}
 
 		.nav-link {
-			margin: 10px auto !important;
+			margin: 10px auto;
 		}
 	}
 
@@ -80,11 +80,11 @@
 		.navbar-collapse {
 
 			.nav-link {
-				color: #fff !important;
+				color: #fff;
 			}
 
 			.active {
-				color: $main-color  !important;
+				color: $main-color;
 			}
 		}
 	}
