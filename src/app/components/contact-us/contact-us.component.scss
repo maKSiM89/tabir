@@ -1,0 +1,95 @@
+@import './../../../assets/styles/vars';
+
+.contact {
+
+	.info {
+		padding-top: 30px;
+
+		.item {
+			overflow-wrap: break-word;
+			word-wrap: break-word;
+			margin-bottom: 30px;
+
+			.cont {
+
+				h6 {
+					color: $main-color;
+					margin-bottom: 5px;
+					font-size: 11px;
+					font-weight: 400;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+				}
+			}
+		}
+	}
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+	.form {
+
+		input,
+		textarea {
+			color: #fff;
+			width: 100%;
+			padding: 15px;
+			border: 0;
+			background: #222;
+			border-radius: 30px;
+		}
+
+		textarea {
+			height: 160px;
+			max-height: 160px;
+			max-width: 100%;
+			border-radius: 10px;
+		}
+
+		.butn {
+			float: right;
+			overflow: hidden;
+			cursor: pointer;
+
+			&:hover {
+				border-color: $main-color;
+			}
+		}
+	}
+}
+.bg-img {
+  background-image: url('/assets/img/map.png');
+ }
+
+ @media (min-width: 768px){
+  .col-md-6 {
+     flex: 0 0 50%;
+     max-width: 50%;
+  }
+ }
+
+ @media (min-width: 768px) {
+
+ .col-md-12 {
+     flex: 0 0 100%;
+     max-width: 100%;
+  }
+ }
+
+ @media (min-width: 768px) {
+  .offset-md-1 {
+    margin-left: 8.333333%;
+  }
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
