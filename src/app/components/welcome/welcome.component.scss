@@ -1,9 +1,6 @@
-$main-color: #c49b66;
-$tablet-sm-screen: 767px;
-$desk-md-screen: 991px;
+@import './../../../assets/styles/vars.scss';
 
 .container {
-
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -22,10 +19,12 @@ $desk-md-screen: 991px;
 .cd-headline.push b {
   opacity: 0;
 }
+
 .cd-headline.push b.is-visible {
   opacity: 1;
   animation: push-in 0.6s;
 }
+
 .cd-headline.push b.is-hidden {
   animation: push-out 0.6s;
 }

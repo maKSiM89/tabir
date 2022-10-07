@@ -1,25 +1,24 @@
 @import '../../../assets/styles/vars.scss';
 
+.about {
 
-.about{
-
-	.skills{
+	.skills {
 		padding: 100px 0;
 
-		h6{
+		h6 {
 			font-size: 14px;
 			font-weight: 400;
 			margin-bottom: 10px;
 		}
 
-		.skill-progress{
+		.skill-progress {
 			height: 8px;
 			width: 100%;
 			background-color: #333;
 			border-radius: 20px;
 			position: relative;
 
-			.progres{
+			.progres {
 				width: 10%;
 				height: 100%;
 				position: absolute;
@@ -27,9 +26,9 @@
 				left: 0;
 				border-radius: 20px;
 				background-color: $main-color;
-	  			transition: all 1.5s;
+	  		transition: all 1.5s;
 
-	  			&:after{
+	  			&:after {
 	  				content: attr(data-value);
 	  				position: absolute;
 	  				top: -15px;
@@ -40,14 +39,14 @@
 		}
 	}
 
-	.hero-img{
+	.hero-img {
 		background-position: 50% 50%;
 	}
 
-	.content{
+	.content {
 		padding: 100px 0;
 
-		h6{
+		h6 {
 			font-size: 12px;
 			font-weight: 300;
 			text-transform: uppercase;
@@ -55,7 +54,7 @@
 			margin-bottom: 10px;
 		}
 
-		h4{
+		h4 {
 			display: inline-block;
 			font-size: 30px;
 			font-weight: 600;
@@ -67,20 +66,20 @@
 			margin-bottom: 40px;
 		}
 
-		h5{
+		h5 {
 			font-size: 18px;
 			margin-bottom: 10px;
 		}
 
-		.social{
+		.social {
 
-			span{
+			span {
 				position: relative;
 				padding-right: 50px;
 				color: $main-color;
 				font-size: 12px;
 
-				&:after{
+				&:after {
 					content: '';
 					width: 40px;
 					height: 1px;
@@ -91,11 +90,11 @@
 				}
 			}
 
-			a{
+			a {
 				font-size: 12px;
 				margin: 0 10px;
 
-				&:hover{
+				&:hover {
 					color: $main-color;
 				}
 			}
