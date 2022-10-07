@@ -1,10 +1,17 @@
 @import '../../../assets/styles/vars.scss';
 
+.row {
+	display: flex;
+}
 
 .about{
+	display: block;
 
 	.skills{
 		padding: 100px 0;
+		flex: 0 0 33%;
+
+		
 
 		h6{
 			font-size: 14px;
@@ -42,10 +49,20 @@
 
 	.hero-img{
 		background-position: 50% 50%;
+		flex: 0 0 33%;
+		
+		
+		
+	}
+	.bg-img{
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 	.content{
 		padding: 100px 0;
+		padding-top: 50px;
+		bottom: 0;
 
 		h6{
 			font-size: 12px;
@@ -55,7 +72,7 @@
 			margin-bottom: 10px;
 		}
 
-		h4{
+		h5{
 			display: inline-block;
 			font-size: 30px;
 			font-weight: 600;
@@ -67,12 +84,17 @@
 			margin-bottom: 40px;
 		}
 
-		h5{
+		h4{
 			font-size: 18px;
 			margin-bottom: 10px;
 		}
 
 		.social{
+			display: inline-block;
+			padding: 10px 20px;
+			border-radius: 30px;
+			background-color: rgba(200,200,200,.05);
+
 
 			span{
 				position: relative;
@@ -101,4 +123,28 @@
 			}
 		}
 	}
+	.valign{
+		
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+  }
+  .section-head{
+	margin-bottom: 80px;
+	position: relative;
+	text-align: center;
+
+	h4{
+		font-size: 70px;
+		font-weight: 800;
+		font-family: inherit;
+		letter-spacing: 2px;
+		color: #222;
+		transition: all .4s;
+	}
+}
+}
+
+.col-lg-4{
+	flex: 0 0 33%;
 }
