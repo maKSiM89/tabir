@@ -1,9 +1,6 @@
-$main-color: #c49b66;
-$tablet-sm-screen: 767px;
-$desk-md-screen: 991px;
+@import './../../../assets/styles/vars.scss';
 
 .container {
-
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -11,21 +8,101 @@ $desk-md-screen: 991px;
 }
 
 // xpush
+.ramka {
+  display: flex;
+  white-space: nowrap;
+}
+
 
 .cd-headline {
+  flex: 0 0 35%;
+  position: relative;
 	line-height: 1.2;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
   font-size: 70px;
+  text-align: end;
 }
 
+.a {
+  flex: 0 0 50%;
+  height: 70px;
+  /*border: 1px solid red;*/
+  font-size: 70px;
+  line-height: 1.2;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  text-align: start;
+  color: $main-color;
+  overflow: hidden;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+.b {
+  position: relative;
+  top: 0;
+  /*background-color: bisque;*/
+  display: inline-block;
+
+}
+.b .p-0,
+.b .p-1,
+.b .p-2,
+.b .p-3 {
+  /*background-color: orange;*/
+
+}
+
+.b .p-2 {
+  position: absolute;
+  left: 568px;
+  top: 0px;
+}
+
+.b .p-3 {
+  position: absolute;
+  top: 0;
+  left: 1150px;
+}
+.a > .b {
+  animation-name: tt;
+  /*animation: tt 4s infinite;*/
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+.a:hover .b {
+  animation-play-state: paused;
+}
+
+@keyframes tt {
+  30% {
+    right: 0px;
+  }
+  60% {
+    right: 563px;
+  }
+  90% {
+    right: 1150px;
+  }
+  100% {
+
+  }
+
+}
+
+
+/*
 .cd-headline.push b {
   opacity: 0;
 }
+
 .cd-headline.push b.is-visible {
   opacity: 1;
   animation: push-in 0.6s;
 }
+
 .cd-headline.push b.is-hidden {
   animation: push-out 0.6s;
 }
@@ -61,7 +138,7 @@ margin-left: 20px;
 .no-js .cd-words-wrapper b.is-visible {
 	opacity: 1;
 }
-
+*/
 .valign{
   display: flex;
   align-items: center;

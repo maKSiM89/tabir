@@ -50,15 +50,12 @@ a:hover {
   color: inherit;
 }
 
-.section-padding {
-  padding: 120px 0;
-}
-
 .text-center {
   text-align: center;
 }
 
 .container {
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -66,8 +63,11 @@ a:hover {
 }
 
 section {
+
   &:hover {
+
     .section-head {
+
       h4 {
         color: transparent;
         -webkit-text-stroke: 1px #333;
@@ -135,36 +135,8 @@ section {
 .row {
   margin-left: -15px;
   margin-right: -15px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-
-@media screen and (max-width: $desk-md-screen) {
-  .mb-md50 {
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: $tablet-sm-screen) {
-  .section-head h4 {
-    font-size: 40px;
-  }
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col-xs-1,
@@ -219,9 +191,110 @@ section {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  width: 100%;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.section-padding {
+  padding: 70px 0;
+}
+
+.section-head {
+  margin-bottom: 80px;
+  position: relative;
+
+  h4 {
+    font-size: 70px;
+    font-weight: 800;
+    font-family: inherit;
+    letter-spacing: 2px;
+    color: #222;
+    transition: all .4s;
+  }
+}
+
+.bg-img {
+  background-image: url('/assets/img/map.png');
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.col-lg-4,
+.col-lg-8,
+.col-md-10 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+@media screen and (max-width: $tablet-sm-screen) {
+
+  .section-head h4 {
+    font-size: 50px;
+  }
+
+  .section-head {
+    margin-bottom: 30px
+  }
+
+  .section-padding {
+    padding: 35px 0;
+  }
+}
+
+@media screen and (max-width: $desk-md-screen) {
+
+  .mb-md50 {
+    margin-bottom: 50px;
+  }
+}
+
+
+@media (min-width: 576px) {
+
+  .container {
+    max-width: 540px;
+  }
 }
 
 @media (min-width: 768px) {
+
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .container {
+    max-width: 720px;
+  }
+
+  .offset-md-1 {
+    margin-left: 8.333333%;
+  }
 
   .col-sm-1,
   .col-sm-2,
@@ -445,6 +518,81 @@ section {
 
 @media (min-width: 992px) {
 
+  .container {
+    max-width: 960px;
+  }
+
+  .col-lg {
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  .col-lg-auto {
+    flex: 0 0 auto;
+    width: auto;
+    max-width: none;
+  }
+
+  .col-lg-1 {
+    flex: 0 0 8.333333%;
+    max-width: 8.333333%;
+  }
+
+  .col-lg-2 {
+    flex: 0 0 16.666667%;
+    max-width: 16.666667%;
+  }
+
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .col-lg-5 {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+
+  .col-lg-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .col-lg-7 {
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+  }
+
+  .col-lg-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+
+  .col-lg-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .col-lg-10 {
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+
+  .col-lg-11 {
+    flex: 0 0 91.666667%;
+    max-width: 91.666667%;
+  }
+
+  .col-lg-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
   .col-md-1,
   .col-md-2,
   .col-md-3,
@@ -663,9 +811,24 @@ section {
   .col-md-offset-0 {
     margin-left: 0%;
   }
+  .col-lg-7 {
+    max-width: 58.33333%;
+    flex: 0 0 58.333333%;
+  }
+  .col-lg-5 {
+    max-width: 41.666667%;
+    flex: 0 0 41.666667%;
+  }
+  .offset-lg-2 {
+    margin-left:16.666667%;
+  }
 }
 
 @media (min-width: 1200px) {
+
+  .container {
+    max-width: 1140px;
+  }
 
   .col-lg-1,
   .col-lg-2,
@@ -885,39 +1048,4 @@ section {
   .col-lg-offset-0 {
     margin-left: 0%;
   }
-}
-
-.mt-30 {
-  margin-top: 30px;
-}
-
-.mt-50 {
-  margin-top: 50px;
-}
-
-.section-padding {
-  padding: 120px 0;
-}
-
-.section-head {
-  margin-bottom: 80px;
-  position: relative;
-
-  h4 {
-    font-size: 70px;
-    font-weight: 800;
-    font-family: inherit;
-    letter-spacing: 2px;
-    color: #222;
-    transition: all .4s;
-  }
-}
-
-.col-lg-4,
-.col-lg-8,
-.col-md-10 {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
 }

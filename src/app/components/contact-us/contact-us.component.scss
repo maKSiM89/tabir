@@ -1,0 +1,55 @@
+@import './../../../assets/styles/vars.scss';
+
+.contact {
+
+	.info {
+		padding-top: 30px;
+
+		.item {
+			overflow-wrap: break-word;
+			word-wrap: break-word;
+			margin-bottom: 30px;
+
+			.cont {
+
+				h6 {
+					color: $main-color;
+					margin-bottom: 5px;
+					font-size: 11px;
+					font-weight: 400;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+				}
+			}
+		}
+	}
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+	.form {
+
+		input,
+		textarea {
+			color: #fff;
+			width: 100%;
+			padding: 15px;
+			border: 0;
+			background: #222;
+			border-radius: 30px;
+		}
+
+		textarea {
+			height: 160px;
+			max-height: 160px;
+			max-width: 100%;
+			border-radius: 10px;
+		}
+	}
+}
+
+.contact {
+  .butn {
+    float: right;
+  }
+}
