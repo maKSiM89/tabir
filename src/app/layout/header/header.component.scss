@@ -1,17 +1,22 @@
-@import './../../../assets/styles/vars.scss';
+@import '../../../assets/styles/vars.scss';
 
 .navbar .navbar-nav .active {
-  color: #c49b66 !important;
+  color: #c49b66;
 }
 
 .navbar{
-	position: absolute;
+	position: relative;
 	left: 0;
 	top: 0;
 	width: 100%;
 	background: transparent;
-	z-index: 9;
+	//z-index: 9;
 	min-height: 80px;
+
+	.navbar-burger__icon,
+	.navbar-burger__links{
+		display: none;
+	}
 
 	.container{
 		display: flex;
@@ -35,7 +40,7 @@
 		}
 
 		.active{
-			color: $main-color !important;
+			color: $main-color;
 		}
 	}
 }
@@ -54,15 +59,21 @@
 .logo{
 	padding: 25px 0px;
 	width: 200px;
+
+	img{
+		width: 75%;
+	}
+
 }
 
-@media screen and (max-width: $desk-md-screen) {
 
+@media (max-width: $desk-md-screen) {
 
 	.navbar {
 		padding-left: 15px;
 
 		.navbar-collapse {
+			display: none;
 			max-height: 340px;
 			overflow: auto;
 			background: #111;
@@ -71,21 +82,39 @@
 		}
 
 		.nav-link {
-			margin: 10px auto !important;
+			margin: 10px auto;
+		}
+
+		.navbar-burger{
+			display: block;
+			position: relative;
+			width: 60px;
+			height: 50px;
+			position: relative;
+			margin: 20px 10px 0 0;
+
+			&__icon {
+				display: block;
+			}
+
+			span{
+				background-color: #fff;
+				width: 100%;
+				height: 2px;
+			}
+		}	
+	
+		.navbar-burger__links{
+			display: block;
+			background: #000;
+			height: 100%;
+			width: 100%;
+			ul{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
 		}
 	}
 
-	.nav-scroll {
-
-		.navbar-collapse {
-
-			.nav-link {
-				color: #fff !important;
-			}
-
-			.active {
-				color: $main-color  !important;
-			}
-		}
-	}
 }
