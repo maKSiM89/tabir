@@ -7,6 +7,13 @@
 	width: 100%;
 	background: transparent;
 	min-height: 80px;
+	z-index: 100;
+	transition: position 2s;
+
+	&.fixed {
+		position: fixed;
+		background: #222;
+	}
 
 	.navbar-burger__icon,
 	.navbar-burger__links {

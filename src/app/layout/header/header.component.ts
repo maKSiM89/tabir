@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   isMenuShown: boolean = false;
   activeLinkIndex: number = 0;
+  isHeaderVisible: boolean = true;
+  headerHeight: number = 155;
 
   constructor() { }
 
@@ -21,5 +23,12 @@ export class HeaderComponent implements OnInit {
 
   onClick(index: number): void {
     this.activeLinkIndex = index;
+  }
+
+  @HostListener('window:scroll', [ '$event' ])
+  onScroll(event: any): void {
+    const scrollTop: number = event.target.scrollingElement.scrollTop;
+
+    this.isHeaderVisible = scrollTop < this.headerHeight;
   }
 }
