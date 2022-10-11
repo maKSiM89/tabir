@@ -2,9 +2,62 @@
 	font-family: 'icofont';
 	src: url('/assets/fonts/icofont.eot?v=1.0.0-beta');
 	src: url('/assets/fonts/icofont.eot?v=1.0.0-beta#iefix') format('embedded-opentype'),
-	url('/assets/fonts/icofont.ttf?v=1.0.0-beta') format('truetype'),
-	url('/assets/fonts/icofont.woff?v=1.0.0-beta') format('woff'),
-	url('/assets/fonts/icofont.svg?v=1.0.0-beta#icofont') format('svg');
+		url('/assets/fonts/icofont.ttf?v=1.0.0-beta') format('truetype'),
+		url('/assets/fonts/icofont.woff?v=1.0.0-beta') format('woff'),
+		url('/assets/fonts/icofont.svg?v=1.0.0-beta#icofont') format('svg');
 	font-weight: normal;
 	font-style: normal;
+}
+
+.icofont-ui-fire-wall:before {
+	content: "\ed34";
+}
+
+.icofont-instrument:before {
+	content: "\eb9d";
+}
+
+.icofont-chart-histogram-alt:before {
+	content: "\ea8b";
+}
+
+.icofont-paint-brush:before {
+	content: "\ebe1";
+}
+
+.icofont-paint:before {
+	content: "\f091";
+}
+
+.icofont-social-twitter:before {
+	content: "\ee34";
+}
+
+.icofont-social-facebook:before {
+	content: "\ee08";
+}
+
+.icofont-social-facebook-messenger:before {
+	content: "\f11c";
+}
+
+.icofont-social-instagram:before {
+	content: "\ee14";
+}
+
+.icofont-brand-linkedin:before {
+	content: "\ea04";
+}
+
+.icofont-social-behance:before {
+	content: "\edf5";
+}
+
+.icofont {
+	font-family: 'IcoFont';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 }

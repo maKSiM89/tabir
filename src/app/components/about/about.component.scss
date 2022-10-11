@@ -1,19 +1,17 @@
 @import '../../../assets/styles/vars.scss';
 
-.row {
-	display: flex;
-}
-
-.about{
+.about {
 	display: block;
 
-	.skills{
+	.row {
+		display: flex;
+	}
+
+	.skills {
 		padding: 100px 0;
 		flex: 0 0 33%;
 
-		
-
-		h6 {
+		h4 {
 			font-size: 14px;
 			font-weight: 400;
 			margin-bottom: 10px;
@@ -34,29 +32,17 @@
 				left: 0;
 				border-radius: 20px;
 				background-color: $main-color;
-	  		transition: all 1.5s;
+				transition: all 1.5s;
 
-	  			&:after {
-	  				content: attr(data-value);
-	  				position: absolute;
-	  				top: -15px;
-	  				right: 0;
-	  				font-size: 10px;
-	  			}
+				&:after {
+					content: attr(data-value);
+					position: absolute;
+					top: -15px;
+					right: 0;
+					font-size: 10px;
+				}
 			}
 		}
-	}
-
-	.hero-img {
-		background-position: 50% 50%;
-		flex: 0 0 33%;
-		
-		
-		
-	}
-	.bg-img{
-		background-size: cover;
-		background-repeat: no-repeat;
 	}
 
 	.content {
@@ -64,7 +50,7 @@
 		padding-top: 50px;
 		bottom: 0;
 
-		h6 {
+		h4 {
 			font-size: 12px;
 			font-weight: 300;
 			text-transform: uppercase;
@@ -72,7 +58,7 @@
 			margin-bottom: 10px;
 		}
 
-		h5{
+		h5 {
 			display: inline-block;
 			font-size: 30px;
 			font-weight: 600;
@@ -84,16 +70,16 @@
 			margin-bottom: 40px;
 		}
 
-		h4{
+		h6 {
 			font-size: 18px;
 			margin-bottom: 10px;
 		}
 
-		.social{
+		.social {
 			display: inline-block;
 			padding: 10px 20px;
 			border-radius: 30px;
-			background-color: rgba(200,200,200,.05);
+			background-color: rgba(200, 200, 200, .05);
 
 			span {
 				position: relative;
@@ -122,27 +108,33 @@
 			}
 		}
 	}
-  
-	.valign{
+
+	.valign {
 		align-items: center;
-  }
-  
-  .section-head{
-	  margin-bottom: 80px;
-	  position: relative;
-	  text-align: center;
+	}
 
-    h4{
-      font-size: 70px;
-      font-weight: 800;
-      font-family: inherit;
-      letter-spacing: 2px;
-      color: #222;
-      transition: all .4s;
-    }
-  }
-}
+	.section-head {
+		margin-bottom: 80px;
+		position: relative;
+		text-align: center;
 
-.col-lg-4{
-	flex: 0 0 33%;
+		h4 {
+			font-size: 70px;
+			font-weight: 800;
+			font-family: inherit;
+			letter-spacing: 2px;
+			color: #222;
+			transition: all .4s;
+		}
+	}
+
+	.hero-img {
+		background-position: 50% 50%;
+		flex: 0 0 33%;
+	}
+
+	.hero-img,
+	.main-content {
+		flex: 0 0 33%;
+	}
 }

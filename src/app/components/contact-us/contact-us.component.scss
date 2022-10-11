@@ -1,6 +1,9 @@
 @import './../../../assets/styles/vars.scss';
 
 .contact {
+	.bg-img {
+		background-image: url('/assets/img/map.png');
+	}
 
 	.info {
 		padding-top: 30px;
@@ -10,8 +13,7 @@
 			word-wrap: break-word;
 			margin-bottom: 30px;
 
-			.cont {
-
+			.item-info {
 				h6 {
 					color: $main-color;
 					margin-bottom: 5px;
@@ -23,11 +25,12 @@
 			}
 		}
 	}
-  .form-group {
-    margin-bottom: 15px;
-  }
 
 	.form {
+
+		.form-group {
+			margin-bottom: 15px;
+		}
 
 		input,
 		textarea {
@@ -46,10 +49,8 @@
 			border-radius: 10px;
 		}
 	}
-}
 
-.contact {
-  .butn {
-    float: right;
-  }
+	.butn {
+		float: right;
+	}
 }

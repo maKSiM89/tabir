@@ -220,16 +220,15 @@ section {
   }
 }
 
-.bg-img {
-  background-image: url('/assets/img/map.png');
-}
-
 textarea {
   overflow: auto;
   resize: vertical;
 }
 
-input, optgroup, select, textarea {
+input,
+optgroup,
+select,
+textarea {
   margin: 0;
   font-family: inherit;
   font-size: inherit;
@@ -811,16 +810,19 @@ input, optgroup, select, textarea {
   .col-md-offset-0 {
     margin-left: 0%;
   }
+
   .col-lg-7 {
     max-width: 58.33333%;
     flex: 0 0 58.333333%;
   }
+
   .col-lg-5 {
     max-width: 41.666667%;
     flex: 0 0 41.666667%;
   }
+
   .offset-lg-2 {
-    margin-left:16.666667%;
+    margin-left: 16.666667%;
   }
 }
 
