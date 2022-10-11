@@ -13,20 +13,20 @@
 
 		
 
-		h6{
+		h6 {
 			font-size: 14px;
 			font-weight: 400;
 			margin-bottom: 10px;
 		}
 
-		.skill-progress{
+		.skill-progress {
 			height: 8px;
 			width: 100%;
 			background-color: #333;
 			border-radius: 20px;
 			position: relative;
 
-			.progres{
+			.progres {
 				width: 10%;
 				height: 100%;
 				position: absolute;
@@ -34,9 +34,9 @@
 				left: 0;
 				border-radius: 20px;
 				background-color: $main-color;
-	  			transition: all 1.5s;
+	  		transition: all 1.5s;
 
-	  			&:after{
+	  			&:after {
 	  				content: attr(data-value);
 	  				position: absolute;
 	  				top: -15px;
@@ -47,7 +47,7 @@
 		}
 	}
 
-	.hero-img{
+	.hero-img {
 		background-position: 50% 50%;
 		flex: 0 0 33%;
 		
@@ -59,12 +59,12 @@
 		background-repeat: no-repeat;
 	}
 
-	.content{
+	.content {
 		padding: 100px 0;
 		padding-top: 50px;
 		bottom: 0;
 
-		h6{
+		h6 {
 			font-size: 12px;
 			font-weight: 300;
 			text-transform: uppercase;
@@ -95,14 +95,13 @@
 			border-radius: 30px;
 			background-color: rgba(200,200,200,.05);
 
-
-			span{
+			span {
 				position: relative;
 				padding-right: 50px;
 				color: $main-color;
 				font-size: 12px;
 
-				&:after{
+				&:after {
 					content: '';
 					width: 40px;
 					height: 1px;
@@ -113,36 +112,35 @@
 				}
 			}
 
-			a{
+			a {
 				font-size: 12px;
 				margin: 0 10px;
 
-				&:hover{
+				&:hover {
 					color: $main-color;
 				}
 			}
 		}
 	}
+  
 	.valign{
-		
-		-webkit-box-align: center;
-		-ms-flex-align: center;
 		align-items: center;
   }
+  
   .section-head{
-	margin-bottom: 80px;
-	position: relative;
-	text-align: center;
+	  margin-bottom: 80px;
+	  position: relative;
+	  text-align: center;
 
-	h4{
-		font-size: 70px;
-		font-weight: 800;
-		font-family: inherit;
-		letter-spacing: 2px;
-		color: #222;
-		transition: all .4s;
-	}
-}
+    h4{
+      font-size: 70px;
+      font-weight: 800;
+      font-family: inherit;
+      letter-spacing: 2px;
+      color: #222;
+      transition: all .4s;
+    }
+  }
 }
 
 .col-lg-4{

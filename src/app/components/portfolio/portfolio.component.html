@@ -1,1 +1,73 @@
-<p>portfolio works!</p>
+<section class="portfolio section-padding">
+    <div class="container">
+        <div class="row">
+
+            <div class="section-head text-center">
+                <h4>Portfolio</h4>
+            </div>
+
+            <!-- filter links -->
+            <div class="filtering text-center">
+                <span (click)="onSectionClick(portfolioType.All)" [class.active]="type === portfolioType.All">All</span>
+                <span (click)="onSectionClick(portfolioType.Brand)"
+                      [class.active]="type === portfolioType.Brand">Brand</span>
+                <span (click)="onSectionClick(portfolioType.Design)"
+                      [class.active]="type === portfolioType.Design">Design</span>
+                <span (click)="onSectionClick(portfolioType.Graphic)"
+                      [class.active]="type === portfolioType.Graphic">Graphic</span>
+            </div>
+
+            <!-- gallery -->
+            <div class="gallery text-center">
+                <!-- gallery item -->
+                <div class="items items-all" *ngIf="type === portfolioType.All">
+                    <div class="items-all-col">
+                        <div class="item-img">
+                            <img src="assets/img/portfolio/1.jpg" alt="image">
+                        </div>
+                        <div class="item-img">
+                            <img src="assets/img/portfolio/5.jpg" alt="image">
+                        </div>
+                        <div class="item-img">
+                            <img src="assets/img/portfolio/7.jpg" alt="image">
+                        </div>
+                    </div>
+
+                    <div class="items-all-col">
+                        <div class="item-img">
+                            <img src="assets/img/portfolio/2.jpg" alt="image">
+                        </div>
+                        <div class="items-small">
+                            <div class="item-img small">
+                                <img src="assets/img/portfolio/3.jpg" alt="image">
+                            </div>
+                            <div class="item-img small">
+                                <img src="assets/img/portfolio/3.jpg" alt="image">
+                            </div>
+                        </div>
+                        <div class="item-img">
+                            <img src="assets/img/portfolio/6.jpg" alt="image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items items-all" *ngIf="type === portfolioType.Brand">
+                    <div class="items-all-col">
+                        <div class="items-small">
+                            <div class="item-img small">
+                                <img src="assets/img/portfolio/3.jpg" alt="image">
+                            </div>
+                            <div class="item-img">
+                                <img src="assets/img/portfolio/5.jpg" alt="image">
+                            </div>
+                        </div>
+
+                        <div class="item-img">
+                            <img src="assets/img/portfolio/7.jpg" alt="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
