@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   isMenuShown: boolean = false;
+  activeLinkIndex: number = 0;
 
   constructor() { }
 
@@ -16,5 +17,9 @@ export class HeaderComponent implements OnInit {
 
   onBurgerClick(): void {
     this.isMenuShown = !this.isMenuShown;
+  }
+
+  onClick(index: number): void {
+    this.activeLinkIndex = index;
   }
 }

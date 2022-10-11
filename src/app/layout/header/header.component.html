@@ -15,22 +15,23 @@
 		<div class="collapse navbar-collapse">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link active" href="#">Home</a>
+					<a class="nav-link" href="#" [class.active]="activeLinkIndex === 0" (click)="onClick(0)">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
+					<a class="nav-link" href="#about" [class.active]="activeLinkIndex === 1" (click)="onClick(1)">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Services</a>
+					<a class="nav-link" href="#services" [class.active]="activeLinkIndex === 2" (click)="onClick(2)">Services</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Portfolio</a>
+					<a class="nav-link" href="#portfolio" [class.active]="activeLinkIndex === 3"
+						 (click)="onClick(3)">Portfolio</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Blog</a>
+					<a class="nav-link" href="#blog" [class.active]="activeLinkIndex === 4" (click)="onClick(4)">Blog</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Contact</a>
+					<a class="nav-link" href="#contact" [class.active]="activeLinkIndex === 5" (click)="onClick(5)">Contact</a>
 				</li>
 			</ul>
 		</div>
