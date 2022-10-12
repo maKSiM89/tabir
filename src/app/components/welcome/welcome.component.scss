@@ -54,11 +54,10 @@
   }
 
   >.headline-names-wrapper {
-    animation-name: tt;
-    /*animation: tt 4s infinite;*/
-    animation-duration: 4s;
+    animation-name: headline-names;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
-    animation-direction: normal;
+    animation-fill-mode: forwards;
   }
 
   &:hover {
@@ -67,20 +66,26 @@
     }
   }
 
-  @keyframes tt {
-    30% {
+  @keyframes headline-names {
+    0% {
       right: 0;
     }
 
-    60% {
+    24% {
       right: 563px;
     }
 
-    90% {
+    50% {
       right: 1150px;
     }
 
-    100% {}
+    75% {
+      right: 563px;
+    }
+
+    100% {
+      right: 0;
+    }
   }
 }
 
@@ -91,7 +96,7 @@
 
 .header {
   min-height: 110vh;
-  background-image: url('/assets/img/bg.jpg');
+  background-image: url('/assets/img/welcome/welcome.png');
   background-position: 0px 4px;
 
   .caption {
