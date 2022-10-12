@@ -3,6 +3,10 @@
 .portfolio {
 	overflow: hidden;
 
+	.row {
+		flex-direction: column;
+	}
+
 	.filtering {
 
 		span {
@@ -48,6 +52,7 @@
 
 		&.small {
 			width: 220px;
+			padding: 10px;
 		}
 
 		&:hover .item-img-overlay {

@@ -1,9 +1,8 @@
 @import './../../../assets/styles/vars.scss';
 
 .contact {
-	.bg-img {
-		background-image: url('/assets/img/map.png');
-	}
+	background-image: url('/assets/img/contact/contact.jpg');
+	background-size: cover;
 
 	.info {
 		padding-top: 30px;
