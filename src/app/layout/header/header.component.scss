@@ -6,7 +6,7 @@
 	top: 0;
 	width: 100%;
 	background: transparent;
-	min-height: 80px;
+	max-height: 95px;
 	z-index: 100;
 	transition: position 2s;
 
@@ -23,13 +23,14 @@
 	.container {
 		display: flex;
 		justify-content: space-between;
+    align-items: center;
 
 		.logo {
-			padding: 25px 0px;
+			padding: 15px 0px;
 			width: 200px;
 
 			img {
-				width: 75%;
+				width: 50%;
 			}
 		}
 	}
@@ -42,7 +43,7 @@
 		display: flex;
 
 		.nav-link {
-			font-size: 13px;
+			font-size: 14px;
 			font-weight: 500;
 			color: #eee;
 			letter-spacing: .5px;
