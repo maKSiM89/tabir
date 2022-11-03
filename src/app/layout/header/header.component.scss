@@ -23,7 +23,6 @@
 	.container {
 		display: flex;
 		justify-content: space-between;
-    align-items: center;
 
 		.logo {
 			padding: 15px 0px;
@@ -41,6 +40,10 @@
 
 	.navbar-nav {
 		display: flex;
+
+    .nav-item :hover {
+      color: $main-color;
+    }
 
 		.nav-link {
 			font-size: 14px;

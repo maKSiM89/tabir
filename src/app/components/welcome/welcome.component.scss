@@ -21,10 +21,13 @@
   font-weight: 700;
   font-size: 70px;
   text-align: end;
+  @media (max-width: 576px) {
+    font-size:43px;
+  }
 }
 
 .headline-names {
-  flex: 0 0 50%;
+  flex: 0 0 60%;
   height: 70px;
   font-size: 70px;
   line-height: 1.2;
@@ -35,6 +38,12 @@
   overflow: hidden;
   margin-left: 20px;
   white-space: nowrap;
+
+  @media (max-width: 576px) {
+    font-size:43px;
+    margin-left: 15px;
+
+  }
 
   &-wrapper {
     position: relative;
@@ -95,7 +104,7 @@
   img {
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 110vh;
+    min-height: 60vh;
     filter: blur(2px);
   }
 
@@ -105,6 +114,10 @@
       font-size: 70px;
       font-weight: 300;
       letter-spacing: 4px;
+
+      @media (max-width: 576px) {
+        font-size: 45px;
+      }
     }
   }
 }
