@@ -5,6 +5,7 @@
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  position: absolute;
 }
 
 .ramka {
@@ -20,10 +21,13 @@
   font-weight: 700;
   font-size: 70px;
   text-align: end;
+  @media (max-width: 576px) {
+    font-size:43px;
+  }
 }
 
 .headline-names {
-  flex: 0 0 50%;
+  flex: 0 0 60%;
   height: 70px;
   font-size: 70px;
   line-height: 1.2;
@@ -34,6 +38,12 @@
   overflow: hidden;
   margin-left: 20px;
   white-space: nowrap;
+
+  @media (max-width: 576px) {
+    font-size:43px;
+    margin-left: 15px;
+
+  }
 
   &-wrapper {
     position: relative;
@@ -54,10 +64,11 @@
   }
 
   >.headline-names-wrapper {
-    animation-name: headline-names;
-    animation-duration: 6s;
+    animation-name: tt;
+    /*animation: tt 4s infinite;*/
+    animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-fill-mode: forwards;
+    animation-direction: normal;
   }
 
   &:hover {
@@ -66,38 +77,36 @@
     }
   }
 
-  @keyframes headline-names {
-    0% {
+  @keyframes tt {
+    30% {
       right: 0;
     }
 
-    24% {
+    60% {
       right: 563px;
     }
 
-    50% {
+    90% {
       right: 1150px;
     }
 
-    75% {
-      right: 563px;
-    }
-
-    100% {
-      right: 0;
-    }
+    100% {}
   }
 }
 
 .valign {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .header {
-  min-height: 110vh;
-  background-image: url('./../../../assets/img/welcome/welcome.png');
-  background-position: 0px 4px;
+  img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    filter: blur(2px);
+  }
 
   .caption {
     h1 {
@@ -105,6 +114,10 @@
       font-size: 70px;
       font-weight: 300;
       letter-spacing: 4px;
+
+      @media (max-width: 576px) {
+        font-size: 45px;
+      }
     }
   }
 }
